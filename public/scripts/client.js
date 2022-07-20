@@ -62,6 +62,21 @@ const createTweetElement = function (tweet) {
   return $tweet;
 };
 
+
+// const submitTweet = function(event) {
+//   event.preventDefault();
+// })
+
+// }
+
 $(document).ready(function () {
+  $("#newTweetForm").on("submit", function (event) {
+    event.preventDefault();
+    $.ajax('/tweets', {
+      method: 'POST',
+      data: $(this).serialize()
+    })
+  })
   renderTweets(data);
 });
+
