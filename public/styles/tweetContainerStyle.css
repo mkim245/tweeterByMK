@@ -1,4 +1,4 @@
-.tweetContainer {
+#tweetContainer {
   display: flex;
   flex-direction: column;
 }
