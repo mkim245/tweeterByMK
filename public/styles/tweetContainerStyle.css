@@ -61,6 +61,6 @@ article.tweet:hover {
   box-shadow: 5px 5px #99a9e0;
 }
 
-article.tweet > footer > div:hover {
+article.tweet > footer > div > span > i:hover {
   color: orange;
 }
