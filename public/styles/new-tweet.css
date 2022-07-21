@@ -26,3 +26,15 @@
   justify-content: right;
   font-family: 'Bungee', sans-serif;
 }
+
+#errorMessage {
+  display: none;
+  color: red;
+  border:2px solid red;
+  width:80%;
+  background-color: transparent;
+  font-family: bold sans-serif;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
