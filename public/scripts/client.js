@@ -43,7 +43,7 @@ $(document).ready(function () {
   const loadTweets = function () {
     $.ajax('/tweets', { method: 'GET' })
       .then((tweets) => {
-        renderTweets(tweets);
+        renderTweets(tweets.reverse());
       })
       .catch((err) => {
         console.log("error", err)
