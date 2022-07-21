@@ -6,6 +6,7 @@
 
 // loops through tweets, calls createTweetElement for each tweet, takes return value and appends it to the tweets container
 const renderTweets = function (tweets) {
+  $('#tweetContainer').empty();
   for (let tweet of tweets) {
     $('#tweetContainer').append(createTweetElement(tweet));
   }
@@ -60,10 +61,13 @@ $(document).ready(function () {
     event.preventDefault();
 
     if ($('#tweet-text').val().length === 0) {
-      return alert('Your tweet is empty')
+      $('#errorText').text('Your tweet is empty!')
+      return $('#errorMessage').show("slow");
+      // <i class="fa-solid fa-triangle-exclamation"></i>
     }
     if ($('#tweet-text').val().length > 140) {
-      return alert('Your tweet is longer than 140 characters')
+      $('#errorText').text('Your tweet is longer than 140 characters!')
+      return $('#errorMessage').show("slow");
     }
 
     $.ajax('/tweets', {
@@ -71,6 +75,8 @@ $(document).ready(function () {
       data: $(this).serialize()
     })
       .then((tweets) => {
+        $('#tweet-text').val("");
+        $('#errorMessage').hide("slow");
         loadTweets();
       })
       .catch((err) => {
