@@ -37,6 +37,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- viewport -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
 </head>
 
 <body>
@@ -64,12 +68,12 @@
   <main class="container">
     <section class="new-tweet">
       <span id="errorMessage"> <i class="fa-solid fa-triangle-exclamation"></i>
-        <span id="errorText">      
+        <span id="errorText">
         </span> <i class="fa-solid fa-triangle-exclamation"></i> </span>
       <form id="newTweetForm">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
-        <div>
+        <div id="buttonNumber">
           <button type="submit" , class="buttonStyle">Tweet</button>
           <output name="counter" id="countNumber" class="counter" for="tweet-text">140</output>
         </div>

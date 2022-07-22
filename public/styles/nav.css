@@ -6,23 +6,23 @@ nav {
   padding: 1.5em;
   justify-content: space-between;
   position: fixed;
-  top:0;
-  width:100%;
+  top: 0;
+  width: 100%;
 }
 
-nav > span {
+nav>span {
   display: flex;
   font-family: 'Bungee', sans-serif;
   font-size: 2em;
-  align-items: center;
+  align-items: center;  
+  padding-top: 20px;
 }
 
 .writeTweet {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
   font-size: 1em;
 }
-

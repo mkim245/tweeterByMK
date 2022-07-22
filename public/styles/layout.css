@@ -6,13 +6,12 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
@@ -24,11 +23,53 @@ body {
 container {
   display: flex;
   margin-left: 5%;
-  margin-right:5%;
+  margin-right: 5%;
   justify-content: center;
   flex-direction: column;
   background-color: #f4f1ec;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+@media only screen and (min-width: 1024px) { /*for desktop*/
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  body>header {
+    width: 30%;
+    margin: 200px 0px 0px 50px;
+  }
+
+  .container {
+    width: 50%;
+    float: right;
+    margin: 200px 50px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) { /*for tablet*/
+  body>nav {
+    background-color: #cc8800;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    height: 90px;
+  }
+
+  body>header {
+    margin-top: 85px;
+  }
+}
+
+@media (max-width: 768px) { /*for mobile phone*/
+  body>nav>span {
+    font-size: 2rem;
+  }
+
+  nav>div.writeTweet {
+    font-size: 1rem;
+  }
+
+  #tweetContainer {
+    font-size: 1rem;
+  }
+}

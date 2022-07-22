@@ -7,11 +7,11 @@
 }
 
 #tweet-text {
-  border-top:transparent;
+  border-top: transparent;
   border-bottom: 2px solid black;
-  border-left:transparent;
-  border-right:transparent;
-  width:100%;
+  border-left: transparent;
+  border-right: transparent;
+  width: 100%;
   background-color: transparent;
 }
 
@@ -30,11 +30,18 @@
 #errorMessage {
   display: none;
   color: red;
-  border:2px solid red;
-  width:80%;
+  border: 2px solid red;
+  width: 80%;
   background-color: transparent;
   font-family: bold sans-serif;
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+#buttonNumber {
+  display: flex;
+  justify-content: space-between;  
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
