@@ -16,3 +16,19 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+*Desktop computer version screen*
+!["Screenshot"](https://github.com/mkim245/tweeterByMK/blob/master/public/screetshots/initialPage.PNG?raw=true)
+*Error message when tweet is empty*
+!["Screenshot"](https://github.com/mkim245/tweeterByMK/blob/master/public/screetshots/writeTweet.PNG?raw=true)
+*Error message when tweet exceeds 140 characters*
+!["Screenshott"](https://github.com/mkim245/tweeterByMK/blob/master/public/screetshots/overWordLimitTweet.PNG?raw=true)
+*Enter tweet*
+!["Screenshot"](https://github.com/mkim245/tweeterByMK/blob/master/public/screetshots/writeTweet.PNG?raw=true)
+*List of tweets*
+!["Screenshot"](https://github.com/mkim245/tweeterByMK/blob/master/public/screetshots/recordTweet.PNG?raw=true)
+*Mobile phone version screen*
+!["Screenshot"](https://github.com/mkim245/tweeterByMK/blob/master/public/screetshots/mobileSize.PNG?raw=true)
+
+
